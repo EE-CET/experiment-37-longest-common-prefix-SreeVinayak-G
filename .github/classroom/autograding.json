@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/LongestCommonPrefix.java",
+      "run": "java -cp src LongestCommonPrefix",
+      "input": "3\nflower\nflow\nflight",
+      "output": "fl",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "No Common Prefix",
+      "setup": "javac src/LongestCommonPrefix.java",
+      "run": "java -cp src LongestCommonPrefix",
+      "input": "3\ndog\nracecar\ncar",
+      "output": "-1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "All Same",
+      "setup": "javac src/LongestCommonPrefix.java",
+      "run": "java -cp src LongestCommonPrefix",
+      "input": "2\ntest\ntest",
+      "output": "test",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Whole String Prefix",
+      "setup": "javac src/LongestCommonPrefix.java",
+      "run": "java -cp src LongestCommonPrefix",
+      "input": "3\nab\nabc\nabcd",
+      "output": "ab",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
